@@ -5,9 +5,40 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_tree</sprite>
+    <sprite>sprites\spr_rock</sprite>
+    <sprite>sprites\spr_hitbox</sprite>
+    <sprites name="GUI">
+      <sprite>sprites\spr_health</sprite>
+      <sprite>sprites\spr_hunger</sprite>
+      <sprite>sprites\spr_stamina</sprite>
+    </sprites>
+  </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\scr_getInputs.gml</script>
+    <script>scripts\scr_playerPhys.gml</script>
+    <script>scripts\scr_physCollisions.gml</script>
+    <script>scripts\scr_resources.gml</script>
+    <script>scripts\scr_player_stats.gml</script>
+    <scripts name="Player States">
+      <script>scripts\scr_player_normal.gml</script>
+      <script>scripts\scr_player_attack.gml</script>
+    </scripts>
+  </scripts>
+  <objects name="objects">
+    <object>objects\obj_player</object>
+    <object>objects\obj_tree</object>
+    <object>objects\obj_rock</object>
+    <object>objects\obj_collision</object>
+    <object>objects\obj_hitbox</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_test</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
