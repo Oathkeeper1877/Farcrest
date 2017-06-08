@@ -126,11 +126,11 @@ scr_player_stats();
 hp = (playerHp / maxPlayerHp) * 100;
 st = (playerSt / maxPlayerSt) * 100;
 nm = (playerNm / maxPlayerNm) * 100;
-dispWidth = window_get_width();
-dispHeight = window_get_height();
+dispWidth = view_wview[0];
+dispHeight = view_hview[0];
 
 display_set_gui_size(dispWidth, dispHeight);
-
+//126x26 healthbar size
 draw_healthbar(dispWidth * (1/10), dispHeight * (9/10), dispWidth * (1.975/10), dispHeight * (9.35/10), nm, c_black, c_silver, c_orange, 1, false, true); //Hunger
 draw_healthbar(dispWidth * (4.5/10), dispHeight * (9/10), dispWidth * (5.475/10), dispHeight * (9.35/10), hp, c_black, c_silver, c_red, 1, false, true); //Health
 draw_healthbar(dispWidth * (8/10), dispHeight * (9/10), dispWidth * (8.975/10), dispHeight * (9.35/10), st, c_black, c_silver, c_green, 0, false, true); //Stamina
