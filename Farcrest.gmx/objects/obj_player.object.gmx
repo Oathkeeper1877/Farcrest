@@ -126,12 +126,13 @@ scr_player_stats();
 hp = (playerHp / maxPlayerHp) * 100;
 st = (playerSt / maxPlayerSt) * 100;
 nm = (playerNm / maxPlayerNm) * 100;
-dispWidth = display_get_width();
-dispHeight = display_get_height();
+dispWidth = window_get_width();
+dispHeight = window_get_height();
 
 draw_healthbar(dispWidth * (1/10), dispHeight * (9/10), dispWidth * (1.975/10), dispHeight * (9.35/10), nm, c_black, c_silver, c_orange, 1, false, true); //Hunger
 draw_healthbar(dispWidth * (4.5/10), dispHeight * (9/10), dispWidth * (5.475/10), dispHeight * (9.35/10), hp, c_black, c_silver, c_red, 1, false, true); //Health
 draw_healthbar(dispWidth * (8/10), dispHeight * (9/10), dispWidth * (8.975/10), dispHeight * (9.35/10), st, c_black, c_silver, c_green, 0, false, true); //Stamina
+
 
 draw_sprite(spr_hunger, 0, dispWidth * (1/10), dispHeight * (9/10)); 
 draw_sprite(spr_health, 0, dispWidth * (4.5/10), dispHeight * (9/10));
