@@ -6,7 +6,20 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_player</sprite>
+    <sprites name="Player">
+      <sprites name="PlayerWalking">
+        <sprite>sprites\spr_playerwalkingF</sprite>
+        <sprite>sprites\spr_playerwalkingB</sprite>
+        <sprite>sprites\spr_playerwalkingR</sprite>
+        <sprite>sprites\spr_playerwalkingL</sprite>
+      </sprites>
+      <sprites name="PlayerStill">
+        <sprite>sprites\spr_playerLeft</sprite>
+        <sprite>sprites\spr_player</sprite>
+        <sprite>sprites\spr_playerRight</sprite>
+        <sprite>sprites\spr_playerBack</sprite>
+      </sprites>
+    </sprites>
     <sprite>sprites\spr_tree</sprite>
     <sprite>sprites\spr_rock</sprite>
     <sprite>sprites\spr_hitbox</sprite>
