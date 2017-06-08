@@ -36,6 +36,7 @@
     <script>scripts\scr_physCollisions.gml</script>
     <script>scripts\scr_resources.gml</script>
     <script>scripts\scr_player_stats.gml</script>
+    <script>scripts\scr_playerAnim.gml</script>
     <scripts name="Player States">
       <script>scripts\scr_player_normal.gml</script>
       <script>scripts\scr_player_attack.gml</script>

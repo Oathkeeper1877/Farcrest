@@ -59,5 +59,5 @@ if (ekey) {
     state = states.attack;
 }
 
-
+scr_playerAnim();
 scr_physCollisions();
