@@ -20,7 +20,6 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_getInputs.gml</script>
-    <script>scripts\scr_playerPhys.gml</script>
     <script>scripts\scr_physCollisions.gml</script>
     <script>scripts\scr_resources.gml</script>
     <script>scripts\scr_player_stats.gml</script>

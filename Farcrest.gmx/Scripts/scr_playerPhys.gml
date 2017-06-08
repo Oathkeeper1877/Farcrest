@@ -1,11 +1,11 @@
 
 
 //Sprinting
-spd = 2;
+spd = 4;
 var sprintSt = 0.35;
 if (shift && moving && stBuffer == false) {
     if (playerSt >= sprintSt) {
-        spd = 5;
+        spd = 6;
         playerSt -= sprintSt;
     }
 }

@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>maxRockHealth = 15;
+            <string>maxRockHealth = 3;
 rockHealth = maxRockHealth;
 delayTime = -1;
 rockIsHit = false;

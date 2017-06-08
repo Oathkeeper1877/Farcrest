@@ -30,7 +30,7 @@
 dir = 1.5;
 hspd = 0;
 vspd = 0;
-spd = 2;
+spd = 4;
 delayTime = -1;
 
 //Music
@@ -76,7 +76,8 @@ state = states.normal;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch (state) 
+            <string>///Player States
+switch (state) 
 {
     case states.normal: scr_player_normal(); break;
     case states.attack: scr_player_attack(); break;
@@ -86,6 +87,22 @@ scr_player_stats();
 </string>
           </argument>
         </arguments>
+      </action>
+    </event>
+    <event eventtype="5" enumb="27">
+      <action>
+        <libid>1</libid>
+        <id>332</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_end_game</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
     </event>
     <event eventtype="8" enumb="64">
@@ -109,14 +126,16 @@ scr_player_stats();
 hp = (playerHp / maxPlayerHp) * 100;
 st = (playerSt / maxPlayerSt) * 100;
 nm = (playerNm / maxPlayerNm) * 100;
+dispWidth = display_get_width();
+dispHeight = display_get_height();
 
-draw_healthbar(182, 656, 364, 688, nm, c_black, c_silver, c_orange, 1, false, true);
-draw_healthbar(546, 656, 728, 688, hp, c_black, c_silver, c_red, 1, false, true);
-draw_healthbar(910, 656, 1092, 688, st, c_black, c_silver, c_green, 0, false, true);
+draw_healthbar(dispWidth * (1/10), dispHeight * (9/10), dispWidth * (1.975/10), dispHeight * (9.35/10), nm, c_black, c_silver, c_orange, 1, false, true); //Hunger
+draw_healthbar(dispWidth * (4.5/10), dispHeight * (9/10), dispWidth * (5.475/10), dispHeight * (9.35/10), hp, c_black, c_silver, c_red, 1, false, true); //Health
+draw_healthbar(dispWidth * (8/10), dispHeight * (9/10), dispWidth * (8.975/10), dispHeight * (9.35/10), st, c_black, c_silver, c_green, 0, false, true); //Stamina
 
-draw_sprite(spr_hunger, 0,176, 632); 
-draw_sprite(spr_health, 0,540, 632);
-draw_sprite(spr_stamina, 0,904, 632);
+draw_sprite(spr_hunger, 0, dispWidth * (1/10), dispHeight * (9/10)); 
+draw_sprite(spr_health, 0, dispWidth * (4.5/10), dispHeight * (9/10));
+draw_sprite(spr_stamina, 0, dispWidth * (8/10), dispHeight * (9/10));
 </string>
           </argument>
         </arguments>

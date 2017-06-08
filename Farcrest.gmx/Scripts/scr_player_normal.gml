@@ -3,7 +3,7 @@ scr_getInputs();
 //Normal Movement
 
 //Sprinting
-spd = 2;
+spd = 3;
 var sprintSt = 0.35;
 if (shift && moving && stBuffer == false) {
     if (playerSt >= sprintSt) {
