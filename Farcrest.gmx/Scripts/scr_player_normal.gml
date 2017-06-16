@@ -43,6 +43,25 @@ if (dkey) {
     hspd = spd;
 }
 
+//Fixes
+if (akey && dkey || dkey && akey) {//Moving Left+Right
+    dir = 1.5;
+}
+if (wkey && skey || skey && wkey) { //Moving Up+Down
+    dir = 1.5;
+}
+if (akey && skey || skey && akey) { //Moving Left+Down
+    dir = 1;
+}
+if (wkey && akey && dkey) { //Alt Up Fix
+    dir = 0.5;
+}
+if (skey && akey && dkey) { //Alt Down Fix
+    dir = 1.5;
+}
+if (wkey && akey && skey && dkey) { //All Fix
+    dir = 1.5;
+}
 
 
 //Check for not moving 

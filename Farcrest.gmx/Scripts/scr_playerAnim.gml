@@ -1,21 +1,20 @@
 scr_getInputs();
 image_speed = 0.5;
 if (moving) {
+    //Normal
     if (dir = 0) { //Right
     sprite_index = spr_playerwalkingR;
     }
-    else if (dir = 0.5) { //Up
+    if (dir = 0.5) { //Up
     sprite_index = spr_playerwalkingB;
     }
-    else if (dir = 1) { //Left
-    sprite_index = spr_playerwalkingL;
-    }
-    else if (akey && skey) { //Down+Left Fix
+    if (dir = 1) { //Left
     sprite_index = spr_playerwalkingL;
     }   
-    else if (dir = 1.5) { //Down
+    if (dir = 1.5) { //Down
     sprite_index = spr_playerwalkingF;
     }
+    
 } else {
     if (dir = 0) { //Right
     sprite_index = spr_playerRight;
