@@ -11,7 +11,7 @@ if (playerSt > maxPlayerSt) playerSt = maxPlayerSt;
 
 //Nourishment Depletion
 if (nmDelay == -1) {
-    nmDelay = 80;
+    nmDelay = 240;
     playerNm -= 1;
     } 
 if (nmDelay != -1) { 
