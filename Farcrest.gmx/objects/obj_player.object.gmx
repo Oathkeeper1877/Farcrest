@@ -131,14 +131,14 @@ dispHeight = view_hview[0];
 
 display_set_gui_size(dispWidth, dispHeight);
 //126x26 healthbar size
-draw_healthbar(dispWidth * (1/10), dispHeight * (9/10), dispWidth * (1.975/10), dispHeight * (9.35/10), nm, c_black, c_silver, c_orange, 1, false, true); //Hunger
-draw_healthbar(dispWidth * (4.5/10), dispHeight * (9/10), dispWidth * (5.475/10), dispHeight * (9.35/10), hp, c_black, c_silver, c_red, 1, false, true); //Health
-draw_healthbar(dispWidth * (8/10), dispHeight * (9/10), dispWidth * (8.975/10), dispHeight * (9.35/10), st, c_black, c_silver, c_green, 0, false, true); //Stamina
+draw_healthbar(dispWidth * (0.25/10), dispHeight * (0.5/10), dispWidth * (2.2/10), dispHeight * (0.85/10), hp, c_black, c_silver, c_red, 0, false, true); //Health
+draw_healthbar(dispWidth * (0.25/10), dispHeight * (1/10), dispWidth * (2.2/10), dispHeight * (1.35/10), st, c_black, c_silver, c_green, 0, false, true); //Stamina
+draw_healthbar(dispWidth * (0.25/10), dispHeight * (1.5/10), dispWidth * (2.2/10), dispHeight * (1.85/10), nm, c_black, c_silver, c_orange, 0, false, true); //Hunger
 
 
-draw_sprite(spr_hunger, 0, dispWidth * (1/10), dispHeight * (9/10)); 
-draw_sprite(spr_health, 0, dispWidth * (4.5/10), dispHeight * (9/10));
-draw_sprite(spr_stamina, 0, dispWidth * (8/10), dispHeight * (9/10));
+draw_sprite(spr_health, 0, dispWidth * (0.25/10), dispHeight * (0.5/10));
+draw_sprite(spr_stamina, 0, dispWidth * (0.25/10), dispHeight * (1/10));
+draw_sprite(spr_hunger, 0, dispWidth * (0.25/10), dispHeight * (1.5/10)); 
 </string>
           </argument>
         </arguments>

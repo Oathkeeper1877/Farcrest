@@ -1,3 +1,4 @@
+scr_getInputs();
 image_speed = 0.5;
 if (moving) {
     if (dir = 0) { //Right
@@ -7,6 +8,9 @@ if (moving) {
     sprite_index = spr_playerwalkingB;
     }
     else if (dir = 1) { //Left
+    sprite_index = spr_playerwalkingL;
+    }
+    else if (akey && skey) { //Down+Left Fix
     sprite_index = spr_playerwalkingL;
     }   
     else if (dir = 1.5) { //Down
