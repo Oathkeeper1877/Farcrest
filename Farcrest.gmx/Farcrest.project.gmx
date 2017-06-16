@@ -19,6 +19,11 @@
         <sprite>sprites\spr_playerRight</sprite>
         <sprite>sprites\spr_playerBack</sprite>
       </sprites>
+      <sprites name="PlayerSwing">
+        <sprite>sprites\spr_playerSwing</sprite>
+        <sprite>sprites\spr_playerSwingBack</sprite>
+        <sprite>sprites\spr_playerSwingRSide</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_tree</sprite>
     <sprite>sprites\spr_rock</sprite>
