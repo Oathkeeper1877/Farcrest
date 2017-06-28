@@ -58,6 +58,7 @@
     <object>objects\obj_house</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_map1</room>
     <room>rooms\rm_test</room>
   </rooms>
   <help>
