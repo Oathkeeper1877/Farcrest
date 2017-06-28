@@ -7,3 +7,4 @@ ekey = keyboard_check(ord('E'));
 shift = keyboard_check(vk_lshift);
 moving = (vspd != 0 || hspd != 0);
 nokey = (!wkey && !akey && !skey && !dkey);
+sprinting = moving && shift;

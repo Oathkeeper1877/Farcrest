@@ -1,20 +1,22 @@
 scr_getInputs();
-image_speed = 0.5;
+
 if (moving) {
+    if (stBuffer == false) {image_speed = 0.6;}
+    if (!sprinting || stBuffer == true) {image_speed = 0.5;}
+    if (still) {image_speed = 0.25;}
     //Normal
     if (dir = 0) { //Right
     sprite_index = spr_playerwalkingR;
     }
-    if (dir = 0.5) { //Up
+    else if (dir = 0.5) { //Up
     sprite_index = spr_playerwalkingB;
     }
-    if (dir = 1) { //Left
+    else if (dir = 1) { //Left
     sprite_index = spr_playerwalkingL;
     }   
-    if (dir = 1.5) { //Down
+    else if (dir = 1.5) { //Down
     sprite_index = spr_playerwalkingF;
     }
-    
 } else {
     if (dir = 0) { //Right
     sprite_index = spr_playerRight;

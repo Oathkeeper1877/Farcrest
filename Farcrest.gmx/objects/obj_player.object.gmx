@@ -32,6 +32,7 @@ hspd = 0;
 vspd = 0;
 spd = 4;
 delayTime = -1;
+still = true;
 
 //Music
 global.MusicRuns = 0;
