@@ -34,6 +34,7 @@
       <sprite>sprites\spr_hunger</sprite>
       <sprite>sprites\spr_stamina</sprite>
     </sprites>
+    <sprite>sprites\spr_house</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -54,6 +55,7 @@
     <object>objects\obj_rock</object>
     <object>objects\obj_collision</object>
     <object>objects\obj_hitbox</object>
+    <object>objects\obj_house</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_test</room>
