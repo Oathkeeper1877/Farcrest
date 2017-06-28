@@ -23,6 +23,7 @@
         <sprite>sprites\spr_playerSwing</sprite>
         <sprite>sprites\spr_playerSwingBack</sprite>
         <sprite>sprites\spr_playerSwingRSide</sprite>
+        <sprite>sprites\spr_playerSwingLeft</sprite>
       </sprites>
     </sprites>
     <sprite>sprites\spr_tree</sprite>
