@@ -81,7 +81,7 @@ rockIsHit = true;
 rockHealth -= 1;
 
 if (rockHealth &lt;= 0) {
-    global.rockCol += round(5 + random_range(0,15));
+    scr_itempickup(0);
     instance_destroy();
 }
 </string>

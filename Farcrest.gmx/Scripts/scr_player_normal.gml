@@ -5,7 +5,7 @@ scr_getInputs();
 //Sprinting
 spd = 3;
 var sprintSt = 0.35;
-if (shift && moving && stBuffer == false) {
+if (shift && moving && stBuffer == false){
     if (playerSt >= sprintSt) {
         spd = 5;
         playerSt -= sprintSt;
