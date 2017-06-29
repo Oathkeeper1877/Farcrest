@@ -66,9 +66,20 @@ if (slotNum &gt; maxItems) {
     slotNum = 0;
 }
 
+var x1, x2, y1, y2;
+    x1 = view_xview[0];
+    x2 = x1 + view_wview[0]/3;
+    y1 = view_yview[0] + 656;
+    y2 = y1 + 64;
+    
+    for (i = 0; i &lt; maxItems; i++) {
+        var ix = x1 + 32 + (i * 48);
+        var iy = y2 - 48;
+        
+        
+}
 
-
-
+/*
 if (abs(mouse_x - (x - 16) &gt; 16) &amp;&amp; abs(mouse_y - (y - 16) &gt; 16)) {
     draw_set_colour(c_white);
     draw_rectangle(x, y, x+32, y+32, 1);
@@ -82,6 +93,7 @@ if (abs(mouse_x - (x - 16) &gt; 16) &amp;&amp; abs(mouse_y - (y - 16) &gt; 16)) 
         mouseItem = item;
     }
 }
+*/
 
 if (item != -1) {
     draw_sprite(spr_items, item, x, y);

@@ -42,9 +42,9 @@ for (i = 0; i &lt; maxItems; i++) {
     button[i].slot = i;
 }
 
-globalvar mouseItem;
-mouseItem = -1;
-instance_create(0,0,obj_mouseitem);
+//globalvar mouseItem;
+//mouseItem = -1;
+//instance_create(0,0,obj_mouseitem);
 </string>
           </argument>
         </arguments>
