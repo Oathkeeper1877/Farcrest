@@ -48,6 +48,20 @@
       <sprite>sprites\spr_rock2</sprite>
       <sprite>sprites\spr_rock3</sprite>
     </sprites>
+    <sprites name="Gardner">
+      <sprites name="gardnerStill">
+        <sprite>sprites\spr_gardner</sprite>
+        <sprite>sprites\spr_gardnerBack</sprite>
+        <sprite>sprites\spr_gardnerLeft</sprite>
+        <sprite>sprites\spr_gardnerRight</sprite>
+      </sprites>
+      <sprites name="gardnerWalking">
+        <sprite>sprites\spr_gardnerWalkingF</sprite>
+        <sprite>sprites\spr_gardnerWalkingB</sprite>
+        <sprite>sprites\spr_gardnerWalkingL</sprite>
+        <sprite>sprites\spr_gardnerWalkingR</sprite>
+      </sprites>
+    </sprites>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -83,6 +97,7 @@
       <object>objects\obj_cursor</object>
       <object>objects\obj_inventory</object>
     </objects>
+    <object>objects\obj_gardner</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_map1</room>
