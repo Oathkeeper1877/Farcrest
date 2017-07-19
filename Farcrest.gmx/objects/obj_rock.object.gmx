@@ -81,7 +81,7 @@ rockIsHit = true;
 rockHealth -= 1;
 
 if (rockHealth &lt;= 0) {
-    scr_itempickup(0);
+    inv_pickup_item(item.rock);
     instance_destroy();
 }
 </string>

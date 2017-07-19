@@ -33,7 +33,6 @@ vspd = 0;
 spd = 4;
 delayTime = -1;
 still = true;
-instance_create(0,0, obj_inventory);
 instance_create(0,0, obj_cursor);
 //Music
 global.MusicRuns = 0;
@@ -108,7 +107,6 @@ switch (state)
 }
 
 scr_player_stats();
-show_debug_message("Wood: " + string(global.woodCol) + " Rocks: " + string(global.rockCol));
 </string>
           </argument>
         </arguments>

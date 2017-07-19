@@ -32,7 +32,6 @@
       <sprite>sprites\spr_hunger</sprite>
       <sprite>sprites\spr_stamina</sprite>
       <sprite>sprites\spr_items</sprite>
-      <sprite>sprites\spr_invBorder</sprite>
       <sprite>sprites\spr_cursor</sprite>
     </sprites>
     <sprite>sprites\spr_house</sprite>
@@ -63,13 +62,16 @@
       <script>scripts\scr_player_attack.gml</script>
     </scripts>
     <scripts name="Inventory">
-      <script>scripts\scr_itemdrop.gml</script>
-      <script>scripts\scr_itempickup.gml</script>
-      <script>scripts\scr_itemcheck.gml</script>
-      <script>scripts\scr_itempickup_slot.gml</script>
-      <script>scripts\scr_itemdrop_slot.gml</script>
+      <script>scripts\inv_remove_item.gml</script>
+      <script>scripts\inv_add_item.gml</script>
+      <script>scripts\inv_pickup_item.gml</script>
+      <script>scripts\x_to_gx.gml</script>
+      <script>scripts\y_to_gy.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_text</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_tree</object>
@@ -78,10 +80,8 @@
     <object>objects\obj_hitbox</object>
     <object>objects\obj_house</object>
     <objects name="UI">
-      <object>objects\obj_invbutton</object>
-      <object>objects\obj_mouseitem</object>
-      <object>objects\obj_inventory</object>
       <object>objects\obj_cursor</object>
+      <object>objects\obj_inventory</object>
     </objects>
   </objects>
   <rooms name="rooms">

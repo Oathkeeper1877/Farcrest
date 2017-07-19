@@ -81,7 +81,7 @@ depth = -y;
 treeHealth -= 1;
 
 if (treeHealth &lt;= 0) {
-    scr_itempickup(1);
+    inv_pickup_item(item.wood);
     instance_destroy();
 }
 </string>

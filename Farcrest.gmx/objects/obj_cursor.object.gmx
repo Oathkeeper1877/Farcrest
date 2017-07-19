@@ -3,12 +3,12 @@
   <spriteName>spr_cursor</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-100003</depth>
+  <depth>-1316134912</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="3" enumb="2">
+    <event eventtype="8" enumb="73">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -25,7 +25,12 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>x = mouse_x;
+            <string>dispWidth = view_wview[0];
+dispHeight = view_hview[0];
+
+display_set_gui_size(dispWidth, dispHeight);
+draw_self();
+x = mouse_x;
 y = mouse_y;
 </string>
           </argument>
