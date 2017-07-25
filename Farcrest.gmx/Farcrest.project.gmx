@@ -20,10 +20,18 @@
         <sprite>sprites\spr_playerBack</sprite>
       </sprites>
       <sprites name="PlayerSwing">
-        <sprite>sprites\spr_playerSwing</sprite>
-        <sprite>sprites\spr_playerSwingBack</sprite>
-        <sprite>sprites\spr_playerSwingRSide</sprite>
-        <sprite>sprites\spr_playerSwingLeft</sprite>
+        <sprites name="NoAxe">
+          <sprite>sprites\spr_playerSwingLeft</sprite>
+          <sprite>sprites\spr_playerSwingBack</sprite>
+          <sprite>sprites\spr_playerSwing</sprite>
+          <sprite>sprites\spr_playerSwingRSide</sprite>
+        </sprites>
+        <sprites name="WithAxe">
+          <sprite>sprites\spr_playerAxeSwing</sprite>
+          <sprite>sprites\spr_playerAxeSwingBack</sprite>
+          <sprite>sprites\spr_playerAxeSwingRSide</sprite>
+          <sprite>sprites\spr_playerAxeSwingLeft</sprite>
+        </sprites>
       </sprites>
     </sprites>
     <sprite>sprites\spr_hitbox</sprite>
