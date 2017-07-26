@@ -10,12 +10,7 @@
   <persistent>0</persistent>
   <colour>32768</colour>
   <showcolour>-1</showcolour>
-  <code>enum states
-{
-    normal,
-    attack,
-    talk
-}</code>
+  <code></code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

@@ -77,8 +77,16 @@ depth = -y;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>treeIsHit = true;
-treeHealth -= 1;
+            <string>///Tree gets hit
+
+treeIsHit = true;
+if (select == 1) {
+    playerHp --;
+    treeHealth -= 0.5;
+} else {
+    treeHealth -= 1;
+}
+
 
 if (treeHealth &gt; 0) {
     audio_play_sound(snd_hit, 0, false);
@@ -97,6 +105,8 @@ else if (treeHealth &lt;= 0) {
     inv_pickup_item(item.wood);
     instance_destroy();
 }
+
+
 </string>
           </argument>
         </arguments>

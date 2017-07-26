@@ -11,7 +11,7 @@ if (playerSt > maxPlayerSt) playerSt = maxPlayerSt;
 
 //Nourishment Depletion
 if (nmDelay == -1) {
-    nmDelay = 240;
+    nmDelay = 600;
     playerNm -= 1;
     } 
 if (nmDelay != -1) { 
@@ -27,11 +27,24 @@ if (playerNm <= 0) {
     }
 }
 
+//Healing from almost full Nourishment
+if (playerNm >= 90) {
+        if (hpDelay == -1) {
+            hpDelay = 80;
+            playerHp += 2;
+        }
+}
+else if (playerNm >= 80) {
+        if (hpDelay == -1) {
+            hpDelay = 80;
+            playerHp += 1;
+        }
+}
+
 if (hpDelay != -1) {
         hpDelay -= 1;
     }
 
-//Healing from full Nourishment
 
 
 //Stamina Control

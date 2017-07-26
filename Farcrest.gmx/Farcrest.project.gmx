@@ -43,6 +43,7 @@
       <sprite>sprites\spr_hunger</sprite>
       <sprite>sprites\spr_stamina</sprite>
       <sprite>sprites\spr_items</sprite>
+      <sprite>sprites\spr_hotbar</sprite>
     </sprites>
     <sprite>sprites\spr_house</sprite>
     <sprites name="Tree">
@@ -85,7 +86,10 @@
     <script>scripts\scr_playerAnim.gml</script>
     <scripts name="Player States">
       <script>scripts\scr_player_normal.gml</script>
-      <script>scripts\scr_player_attack.gml</script>
+      <scripts name="Attack">
+        <script>scripts\scr_player_attackAxe.gml</script>
+        <script>scripts\scr_player_attackFist.gml</script>
+      </scripts>
     </scripts>
     <scripts name="Inventory">
       <script>scripts\inv_remove_item.gml</script>
@@ -107,6 +111,7 @@
     <object>objects\obj_house</object>
     <objects name="UI">
       <object>objects\obj_inventory</object>
+      <object>objects\obj_hotbar</object>
     </objects>
     <object>objects\obj_gardner</object>
   </objects>

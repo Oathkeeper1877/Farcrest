@@ -75,7 +75,13 @@ if ((!wkey && !skey) || (wkey && skey)) {
 if (ekey) {
     hspd = 0;
     vspd = 0;
-    state = states.attack;
+    
+    if (select == 1) {
+    state = states.attackFist;
+    }
+    else if (select == 2) {
+    state = states.attackAxe;
+    }
 }
 
 scr_playerAnim();

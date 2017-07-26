@@ -78,7 +78,12 @@ depth = -y;
             <string>///Mining Stone
 
 rockIsHit = true;
-rockHealth -= 1;
+if (select == 1) {
+    playerHp -= 2;
+    rockHealth -= 0.5;
+} else {
+    rockHealth -= 1;
+}
 
 if (rockHealth &gt; 0) {
     audio_play_sound(snd_hit, 0, false);
@@ -97,6 +102,11 @@ else if (rockHealth &lt;= 0) {
     inv_pickup_item(item.rock);
     instance_destroy();
 }
+
+if (select == 1) { //If player is using fist, apply damage to player
+    playerHp -= 2;
+}
+
 </string>
           </argument>
         </arguments>

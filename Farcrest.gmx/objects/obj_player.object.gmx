@@ -36,21 +36,22 @@ still = true;
 //Music
 global.MusicRuns = 0;
 global.Music = "";
-
+instance_create(obj_player.x, obj_player.y, obj_hotbar);
 scr_resources(); //Initializes Resources
 
 //Player Stats
+globalvar playerHp, playerSt, playerNm;
 hpDelay = -1;
 stDelay = -1;
 stBuffer = false;
 nmDelay = -1;
 
-playerHp = 100;
-maxPlayerHp = 100;
-playerSt = 50;
+maxPlayerHp = 200;
+playerHp = maxPlayerHp;
 maxPlayerSt = 50;
-playerNm = 100;
+playerSt = maxPlayerSt;
 maxPlayerNm = 100;
+playerNm = maxPlayerNm;
 
 state = states.normal;
 
@@ -102,7 +103,9 @@ depth = -y;
 switch (state) 
 {
     case states.normal: scr_player_normal(); break;
-    case states.attack: scr_player_attack(); break;
+    case states.attackFist: scr_player_attackFist(); break;
+    case states.attackAxe: scr_player_attackAxe(); break;
+    
 }
 
 scr_player_stats();
