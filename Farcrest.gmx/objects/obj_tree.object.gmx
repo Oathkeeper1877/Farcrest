@@ -80,7 +80,20 @@ depth = -y;
             <string>treeIsHit = true;
 treeHealth -= 1;
 
-if (treeHealth &lt;= 0) {
+if (treeHealth &gt; 0) {
+    audio_play_sound(snd_hit, 0, false);
+} else {
+    audio_play_sound(snd_break, 0, false);
+}
+
+if (treeHealth == 2) {
+    sprite_index = spr_treex1;
+}
+else if (treeHealth == 1) {
+    sprite_index = spr_treex2;
+}
+
+else if (treeHealth &lt;= 0) {
     inv_pickup_item(item.wood);
     instance_destroy();
 }
@@ -108,7 +121,7 @@ if (treeHealth &lt;= 0) {
             <kind>1</kind>
             <string>draw_self();
 
-
+/*
 var hp;
 hp = (treeHealth/maxTreeHealth) * 100;
 if (treeIsHit == true) {

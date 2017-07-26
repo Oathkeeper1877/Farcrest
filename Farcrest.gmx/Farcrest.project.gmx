@@ -4,7 +4,10 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_break</sound>
+    <sound>sound\snd_hit</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Player">
       <sprites name="PlayerWalking">
@@ -32,7 +35,6 @@
       <sprite>sprites\spr_hunger</sprite>
       <sprite>sprites\spr_stamina</sprite>
       <sprite>sprites\spr_items</sprite>
-      <sprite>sprites\spr_cursor</sprite>
     </sprites>
     <sprite>sprites\spr_house</sprite>
     <sprites name="Tree">
@@ -94,7 +96,6 @@
     <object>objects\obj_hitbox</object>
     <object>objects\obj_house</object>
     <objects name="UI">
-      <object>objects\obj_cursor</object>
       <object>objects\obj_inventory</object>
     </objects>
     <object>objects\obj_gardner</object>
