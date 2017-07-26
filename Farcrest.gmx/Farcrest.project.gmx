@@ -75,6 +75,7 @@
     </sprites>
     <sprite>sprites\spr_woodpickup</sprite>
     <sprite>sprites\spr_rockpickup</sprite>
+    <sprite>sprites\spr_Wall</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -114,6 +115,7 @@
       <object>objects\obj_hotbar</object>
     </objects>
     <object>objects\obj_gardner</object>
+    <object>objects\obj_Wall</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_map1</room>
