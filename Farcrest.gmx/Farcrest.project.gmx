@@ -9,6 +9,14 @@
     <sound>sound\snd_hit</sound>
   </sounds>
   <sprites name="sprites">
+    <sprites name="HotBarIcons">
+      <sprite>sprites\spr_handIcon</sprite>
+      <sprite>sprites\spr_toolIcon</sprite>
+      <sprite>sprites\spr_bagIcon</sprite>
+      <sprite>sprites\spr_buildIcon</sprite>
+      <sprite>sprites\spr_workIcon</sprite>
+      <sprite>sprites\spr_mapIcon</sprite>
+    </sprites>
     <sprites name="Player">
       <sprites name="PlayerWalking">
         <sprite>sprites\spr_playerwalkingF</sprite>
