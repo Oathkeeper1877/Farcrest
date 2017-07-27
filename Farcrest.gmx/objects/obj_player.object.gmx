@@ -37,6 +37,7 @@ still = true;
 global.MusicRuns = 0;
 global.Music = "";
 instance_create(obj_player.x, obj_player.y, obj_hotbar);
+instance_create(obj_player.x, obj_player.y, obj_inventory);
 scr_resources(); //Initializes Resources
 
 //Player Stats

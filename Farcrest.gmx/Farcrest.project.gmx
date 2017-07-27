@@ -118,8 +118,7 @@
     <object>objects\obj_Wall</object>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_map1</room>
-    <room>rooms\rm_test</room>
+    <room>rooms\main</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
